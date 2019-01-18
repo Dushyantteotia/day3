@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Via Dom Property</title>
+	<style >
+		div{
+			border: 4px solid blue;
+			cursor: pointer;
+			width: 20%;
+		}
+	</style>
+	<script >
+
+		
+
+		function init(){
+			var divReference = document.getElementById("click-div");
+			divReference.addEventListener ("click", displayMsg)
+			divReference.addEventListener ("click", displayMsgOne)
+		}
+
+		function displayMsg(){
+			alert("hello My Eye Is Blinking");
+			
+		}
+		function displayMsgOne(){
+			alert("Why you are copy me?");
+			
+		}
+	</script>
+</head>
+<body onload="init()">
+	<img src="funny.gif"> 
+	<div id="click-div"> click me</div>
+
+
+</body>
+</html>
